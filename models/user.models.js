@@ -3,8 +3,8 @@ const userSchema = new mongoose.Schema({
     username: { type: String, required: true },
     email: { type: String, required: true },
     discountedBrands: [{
-      brand: { type: mongoose.Schema.Types.ObjectId, ref: 'Brand', required: true },
-      discountPrice: { type: Number, required: true }
+      brand: { type: mongoose.Schema.Types.ObjectId, ref: 'Brand', required: false },
+      discountPrice: { type: Number, required: false }
     }]
   });
 
